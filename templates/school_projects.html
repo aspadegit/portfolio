@@ -1,0 +1,131 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>
+    School Projects
+</title>
+{% endblock %}
+
+{% block body %}
+
+<h1><u>School Projects</u></h1>
+
+<h2>#1: Business Scheduling Website</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <div>
+            <img class="unsplashed_photo" alt="An image from above of someone working on a laptop at a desk with pen and paper nearby" src="{{url_for('static', filename='images/desk-unsplash.jpg')}}">
+            <a class="caption" href="https://unsplash.com/photos/a-person-sitting-at-a-table-with-a-laptop-oUbzU87d1Gc">Photo by Microsoft on Unsplash</a>
+        </div>
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+        <p>
+            This was a group project that was made with <b>Angular</b> and involved <b>agile development</b>. Alaine was on the front-end team, and worked to integrate the website with its backend, which used Go.
+        </p>
+        <p>
+            This website has a separate user and business login. It allows a user to sign up for classes, and businesses to create classes. These options interface with a backend that stores the data. 
+        </p>
+        <h3>Demonstration</h3>
+        <p>
+            A YouTube demonstration can be watched <a href="https://www.youtube.com/watch?v=6K9OA_iKL58">here</a>.
+        </p>
+      
+        <h3>Code</h3>
+
+        <p>
+            The code can be found <a href="https://github.com/SwampSyndicate/BizZen">here</a>.
+        </p>
+    </div>
+</div>
+
+<h2>#2: P2P Networking Service</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <div>
+            <img class="unsplashed_photo" alt="An image of a computer screen with colorful code across it" src="{{url_for('static', filename='images/chris-ried-unsplash.jpg')}}">
+            <a class="caption" href="https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-code-on-it-ieic5Tq8YMk">Photo by Chris Ried on Unsplash</a>
+        </div>
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+        <p>
+            This was a group project that was made with <b>Java socket programming</b>, and made heavy use of <b>threading</b>.
+        </p>
+        <p>
+            This project is a peer-to-peer networking service, where several peers in a network can receive a single file via uploading their pieces to others, and downloading pieces they don't have from peers that do.
+            More details can be found on the GitHub's readme.
+        </p>
+        <h3>Demonstration</h3>
+        <p>
+            A YouTube demonstration can be watched <a href="https://www.youtube.com/watch?v=KslhlLtbrfw">here</a>.
+        </p>
+      
+        <h3>Code</h3>
+
+        <p>
+            The code can be found <a href="https://github.com/Cane5002/CNT4007Project">here</a>.
+        </p>
+    </div>
+</div>
+
+<h2>#3: WAD File Reader & Writer</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <div>
+            <img class="unsplashed_photo" alt="A photo of a laptop with code on it" src="{{url_for('static', filename='images/laptop-unsplash.jpg')}}">
+            <a class="caption" href="https://unsplash.com/photos/turned-on-macbook-air-on-desk-iOykDIkZLQw">Photo by Goran Ivos on Unsplash</a>
+        </div>
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+        <p>
+            This was made with <b>C++</b>. The purpose of this project was to learn about file systems via reading and editing .WAD files, which is the file type that the video game DOOM is in.
+        </p>
+        <p>
+            This project involved reading in the bytes of the WAD file and storing appropriate variables, then shifting bytes as necessary when writing to the WAD after adding files.
+            Files could be added via a daemon that could traverse the directories in the WAD file as if it was a normal Linux directory.
+        </p>
+        <h3>Demonstration</h3>
+        <p>
+            A YouTube demonstration can be watched <a href="https://www.youtube.com/watch?v=70a1jRKlM2U">here</a>.
+        </p>
+      
+        <h3>Code</h3>
+
+        <p>
+            The code can be found <a href="https://gitfront.io/r/gitspadeshare/NDRPbX26jamC/cop4600p3/">here</a>.
+        </p>
+    </div>
+</div>
+
+<h2>#4: 3D Audio Video Game</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <div>
+            <img class="unsplashed_photo" alt="A picture of headphones" src="{{url_for('static', filename='images/headphones-unsplash.jpg')}}">
+            <a class="caption" href="https://unsplash.com/photos/black-and-gray-corded-headphones-7KMhZqylgss">Photo by Kiran CK on Unsplash</a>
+        </div>
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+        <p>
+            This was made in <b>C# with Unity</b>. The purpose of this project was to learn about 3D audio, user studies, and HRTFs (Head Related Transfer Functions).
+        </p>
+        <p>
+            This project allows the user to traverse a 3D space, and the goal is to locate birds using 3D audio. 
+        </p>
+        <p>
+            The code is private on GitHub, and can be shown in an interview if necessary.
+        </p>
+        <h3>Demonstration</h3>
+        <p>
+            A YouTube demonstration can be watched <a href="https://www.youtube.com/watch?v=2yZ102xk8EI">here</a>. (Headphones recommended)
+        </p>
+      
+        
+    </div>
+</div>
+
+
+{% endblock %}

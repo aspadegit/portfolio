@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>
+    About
+</title>
+{% endblock %}
+
+{% block body %}
+
+<h1><u>About Alaine</u></h1>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <img class="unsplashed_photo round_img" alt="Picture of Alaine Spade" src="{{url_for('static', filename='images/alaine.jpg')}}">
+    </div>
+    <div class ="p_container">
+        <p>
+            Alaine is a passionate computer science student at the University of Florida with a love for coding.
+        </p>
+        <p>
+            She has been coding for over half a decade, and enjoys the puzzles and challenges it brings.
+        </p>
+
+    
+
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/alaine-spade/">Alaine's Profile</a>
+    </div>
+
+</div>
+<div class="divider"></div>
+
+{% endblock %}

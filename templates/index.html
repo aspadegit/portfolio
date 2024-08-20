@@ -1,0 +1,62 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>
+    Personal Projects
+</title>
+{% endblock %}
+
+{% block body %}
+
+<h1><u>Personal Projects</u></h1>
+
+<h2>#1: This Website</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <img class="unsplashed_photo" alt="Python Flask Logo" src="{{url_for('static', filename='images/flasklogo.webp')}}">
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+        <p>
+            This website is made with <b>Python Flask, HTML, and CSS</b>.
+        </p>
+        <p>
+            Flask controls the routing between pages, as well as allowing templates to speed up development.
+            HTML and CSS were used to develop the structure and visual elements of the webpage.
+        </p>
+        <p>
+            The page is responsive; decrease the size of the window to see how it adjusts!
+        </p>
+        <h3>Code</h3>
+
+        <p>
+            <a>link</a>
+        </p>
+    </div>
+
+</div>
+<h2>#2: A Video Game</h2>
+<div class="flexy">
+    <div class="unsplashed_container_vert">
+        <img class="unsplashed_photo" alt="Python Flask Logo" src="{{url_for('static', filename='images/goat.png')}}">
+    </div>
+    <div class ="p_container">
+        <h3>About</h3>
+
+        <p>
+            This game, tentatively titled "Goat Game," is a video game that is currently being created in the <b>Godot Engine with C# and .NET</b> 
+            by both Alaine Spade and Jose Pancorbo.
+        </p>
+        <h3>Demonstration</h3>
+        <p>
+            The development blog (found <a href="https://www.tumblr.com/goatgamedev">here</a>) contains videos and text documenting the process that Jose and Alaine have made on the game so far.
+        </p>
+        <h3>Code</h3>
+        <p>
+            The code can be found <a href="https://github.com/aspadegit/GoatGame">here</a>. 
+
+        </p>
+    </div>
+
+</div>
+{% endblock %}
